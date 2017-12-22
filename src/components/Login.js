@@ -43,7 +43,7 @@ export default class Login extends React.Component {
                   </div>
                 </form>
                 {this.props.error ?
-                  <p>Wrong email or password </p> : null
+                  <p className="error">Invalid email or password </p> : null
                 }
               </div>
             </div>

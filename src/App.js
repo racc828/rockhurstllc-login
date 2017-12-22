@@ -17,7 +17,8 @@ class App extends Component {
     super()
     this.state ={
       currentUser: {},
-      error:false
+      error:false,
+      loading:false
     }
   }
 
@@ -40,6 +41,9 @@ class App extends Component {
   }
 
   getUser = (user) => {
+    this.setState({
+      loading:true
+    })
     return SessionsAdapter.getUser(user)
     .then( (userData) => {
       if(userData.error) {
@@ -48,11 +52,17 @@ class App extends Component {
         })
       } else {
         this.setState({
-         currentUser: userData
+         currentUser: userData,
+         error:false
        })
        localStorage.setItem('token', userData.jwt)
        this.context.router.history.push('/home')
       }
+    })
+    .then(() => {
+      this.setState({
+        loading:false
+      })
     })
   }
 
@@ -68,6 +78,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        {this.state.loading ? <div className="loader-container"><div className="loader"></div></div> : null }
         {this.state.currentUser.firstname ?
           <div>
             <Route exact path="/" render={this.renderHome}/>
