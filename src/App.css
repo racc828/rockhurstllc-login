@@ -1,0 +1,43 @@
+.login-container h3 {
+  position:absolute;
+  width:100%;
+  left:0;
+  top:14%;
+  margin:0 auto;
+}
+
+.logo-container {
+  text-align:center;
+  padding-top:10%;
+  margin-bottom:20px;
+}
+
+.home {
+  padding-top:20px;
+}
+
+.logo {
+  height:50px;
+}
+
+.login-box h5 {
+  padding-top:30px;
+}
+
+.login-box{
+  margin-top:15%;
+  padding:10px 20px;
+  left:0;
+  right:0;
+  margin:auto;
+  width:500px;
+}
+
+.login-form {
+  width:90%;
+  margin:0 auto;
+}
+
+.login-form button {
+  margin-bottom:30px;
+}
