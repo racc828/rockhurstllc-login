@@ -85,7 +85,11 @@ class App extends Component {
             <Route exact path="/home" render={this.renderHome}/>
           </div>
           :
-          <Route exact path="/" render={this.renderLogin}/>  }
+          <div>
+            <Route exact path="/" render={this.renderLogin}/>
+            <Route exact path="/home" render={this.renderLogin}/>
+          </div>
+            }
       </div>
     );
   }
