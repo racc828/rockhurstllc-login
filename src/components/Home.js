@@ -19,9 +19,6 @@ export default class Home extends React.Component {
       <div className="home">
         {this.state.loading ? <div className="loader-container"><div className="loader"></div></div> : null }
         <div className="container">
-          <div className="right-align">
-            <button className="waves-effect waves-light btn" onClick={this.props.logOut} type="submit">Logout</button>
-          </div>
           <div className="main-body">
             <h5>Welcome {this.props.currentUser.firstname}</h5>
           </div>

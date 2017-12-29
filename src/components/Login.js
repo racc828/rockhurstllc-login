@@ -29,9 +29,6 @@ export default class Login extends React.Component {
     return(
       <div>
         <div className="container login-container">
-          <div className="logo-container">
-            <img className="logo" src={logo}/>
-          </div>
             <div className="login-box">
               <div className="z-depth-3">
                 <h5 className="center-align"> Login </h5>

@@ -41,9 +41,54 @@
   width:500px;
 }
 
+
+.logo-container {
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.logo-container img {
+	height:50px;
+	max-width:100%;
+}
+
+.nav {
+	background:#fff;
+}
+
+nav ul a {
+	color:#9a0000!important;
+	text-transform:uppercase;
+}
+
+
 .login-form {
   width:90%;
   margin:0 auto;
+}
+
+nav {
+	background:#fff!important;
+	border:none;
+	box-shadow:none!important;
+	margin-bottom:30px;
+}
+
+.login {
+	float:right;
+	position:absolute;
+	right:30px;
+	top:30px;
+}
+
+.login a {
+	color:#9a0000!important;
+}
+
+nav ul li{
+	float:none!important;
+	display:inline-block!important;
 }
 
 .login-form button {
@@ -108,4 +153,14 @@
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+@media (max-width:992px) {
+	nav ul li{
+		float:left;
+		display:block;
+	}
+	nav .button-collapse i {
+		color:#9a0000;
+	}
 }
