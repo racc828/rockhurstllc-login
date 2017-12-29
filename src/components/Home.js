@@ -19,16 +19,22 @@ export default class Home extends React.Component {
 
   render() {
     return(
-      <div className="home">
+      <div className="home container">
         {this.state.loading ? <div className="loader-container"><div className="loader"></div></div> : null }
-        <div className="container">
-          <div className="main-body">
-            <h5>Welcome {this.props.currentUser.firstname}</h5>
-            <a href={document1}> BLS Investors Fund II unit Purchase Agreement and Amended and Restated Limited Liabnility Company Agreement</a> <br/>
-            <a href={document2}> Rockhurst LLC Cover Letter and Schedule</a> <br/>
-            <a href={document3}>Signature Pages, Accredited Investor Questionnaire and Investor Contact Information Form</a>
-          </div>
-        </div>
+        <h5>Welcome {this.props.currentUser.firstname}</h5>
+        <div class="card z-depth-2 grey-bg">
+					<div class="row">
+						<div class="container">
+							<div>
+                <ul>
+                  <li><a href={document1}> BLS Investors Fund II unit Purchase Agreement and Amended and Restated Limited Liabnility Company Agreement</a> </li>
+                  <li><a href={document2}> Rockhurst LLC Cover Letter and Schedule</a></li>
+                  <li><a href={document3}>Signature Pages, Accredited Investor Questionnaire and Investor Contact Information Form</a></li>
+                </ul>
+							</div>
+						</div>
+					</div>
+				</div>
       </div>
     )
   }

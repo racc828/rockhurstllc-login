@@ -11,9 +11,20 @@
   padding-top:10%;
   margin-bottom:20px;
 }
-
+.card a,
 .main-body a {
   color:#9a0000!important;
+}
+
+ul:not(.browser-default)>li {
+	list-style:circle!important;
+	margin-left:20px!important;
+  margin-bottom:10px!important;
+}
+
+.card {
+  padding-top:20px;
+  padding-bottom:20px;
 }
 
 .home {
