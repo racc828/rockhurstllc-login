@@ -11,6 +11,10 @@
   padding-top:10%;
   margin-bottom:20px;
 }
+
+.fa-download {
+  margin-left:10px;
+}
 .card a,
 .main-body a {
   color:#9a0000!important;
