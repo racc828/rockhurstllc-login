@@ -26,6 +26,7 @@ class App extends Component {
   componentDidMount() {
      SessionsAdapter.currentUser()
      .then(user => {
+       debugger
       this.setState({
         currentUser: user,
         loading:false
@@ -48,6 +49,7 @@ class App extends Component {
     })
     return SessionsAdapter.getUser(user)
     .then( (userData) => {
+      debugger
       if(userData.error) {
         this.setState({
           error:true
