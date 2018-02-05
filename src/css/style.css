@@ -1,0 +1,15 @@
+.text-center {
+	text-align:center;
+}
+
+fieldset {
+	border:none;
+}
+
+input {
+	width:100%;
+}
+
+.ms-hero-bg-primary:after {
+	background:#9a0000;
+}

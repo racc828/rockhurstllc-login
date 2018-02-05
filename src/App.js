@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import './css/materialize.min.css';
+import './css/global.css';
+import './css/animate.css';
+import './css/red.css';
+import './css/style.css';
+import './css/style2.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import PropTypes from 'prop-types'
 import Login from './components/Login'
@@ -85,32 +89,10 @@ class App extends Component {
         <section className="nav z-depth-4">
     		<div className="container">
     		  <div className="logo-container">
-    				<a href="https://rockhurstllc.herokuapp.com/index.html"><img src={logo}/></a>
             {this.state.currentUser.firstname ?
               <span className="login"><a onClick={this.logOut}>Logout</a>
             </span> : null }
     		  </div>
-    		  <nav>
-    			<div className="nav-wrapper">
-    			  <a href="#" data-activates="mobile-demo" className="button-collapse"><i className="material-icons">menu</i></a>
-    			  <ul className="center hide-on-med-and-down">
-    				<li><a href="https://rockhurstllc.herokuapp.com/index.html">Home</a></li>
-    				<li><a href="https://rockhurstllc.herokuapp.com/creating-values.html">Creating Values</a></li>
-    				<li><a href="https://rockhurstllc.herokuapp.com/team.html">Team</a></li>
-    				<li><a href="https://rockhurstllc.herokuapp.com/portfolio.html">Portfolio</a></li>
-    				<li><a href="https://rockhurstllc.herokuapp.com/contact.html">Contact</a></li>
-    				<li><a href="https://rockhurstllc.herokuapp.com/links.html">Links</a></li>
-    			  </ul>
-    			  <ul className="side-nav" id="mobile-demo">
-    				<li><a href="https://rockhurstllc.herokuapp.com/index.html">Home</a></li>
-    				<li><a href="https://rockhurstllc.herokuapp.com/creating-values.html">Creating Values</a></li>
-    				<li><a href="https://rockhurstllc.herokuapp.com/team.html">Team</a></li>
-    				<li><a href="https://rockhurstllc.herokuapp.com/portfolio.html">Portfolio</a></li>
-    				<li><a href="https://rockhurstllc.herokuapp.com/contact.html">Contact</a></li>
-    				<li><a href="https://rockhurstllc.herokuapp.com/links.html">Links</a></li>
-    			  </ul>
-    			</div>
-    		  </nav>
     		</div>
     	</section>
         {this.state.loading ? <div className="loader-container"><div className="loader"></div></div> : null }
