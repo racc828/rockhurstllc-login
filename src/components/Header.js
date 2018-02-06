@@ -13,7 +13,7 @@ export default class Header extends React.Component {
           <header className="ms-header ms-header-dark">
           <div className="container container-full">
             <div className="ms-title">
-              <a href="index.html">
+              <a href="https://rockhurstllc.herokuapp.com/index.html" >
                 <h1 className="animated fadeInRight animation-delay-6">
                   <span>Rockhurst, LLC.</span>
                 </h1>
