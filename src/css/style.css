@@ -2,12 +2,65 @@
 	text-align:center;
 }
 
+.navbar-static-top {
+	margin-bottom:0;
+}
+
+.logout {
+	background:none;
+	color:#fff;
+}
+
+.logout a {
+	color:#fff;
+}
+
 fieldset {
 	border:none;
 }
 
+.left-header {
+
+	font-size:35px;
+}
+
+.h50 {
+	height:50px;
+}
+
+.ms-collapse-nav li.panel a.collapsed:after {
+	display:none;
+}
+
+.tab-list-i a {
+	font-weight:bold!important;
+}
+
 input {
 	width:100%;
+}
+
+.tabs-cont {
+	background:#9a0000!important;
+	height:50px;
+	line-height:50px;
+}
+
+.top-nav {
+	background:#9a0000!important;
+}
+
+.ml-0 {
+	margin-left:0;
+	padding-left:0;
+}
+
+.port-tabs {
+	margin-bottom:0;
+}
+
+.port-tabs ul {
+	margin-bottom:0;
 }
 
 .ms-hero-bg-primary:after {

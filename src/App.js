@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import './css/global.css';
 import './css/animate.css';
+import './css/plugins.min.css';
 import './css/red.css';
 import './css/style.css';
 import './css/style2.css';
@@ -11,6 +12,7 @@ import Login from './components/Login'
 import SessionsAdapter from './adapters/SessionsAdapter'
 import Home from './components/Home'
 import logo from './images/rockhurstlogo.png'
+import Header from './components/Header'
 
 class App extends Component {
 
@@ -86,15 +88,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <section className="nav z-depth-4">
-    		<div className="container">
-    		  <div className="logo-container">
-            {this.state.currentUser.firstname ?
-              <span className="login"><a onClick={this.logOut}>Logout</a>
-            </span> : null }
-    		  </div>
-    		</div>
-    	</section>
+        <Header logOut={this.logOut} currentUser={this.state.currentUser} />
         {this.state.loading ? <div className="loader-container"><div className="loader"></div></div> : null }
         {this.state.currentUser.firstname ?
           <div>

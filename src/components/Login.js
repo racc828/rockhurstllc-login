@@ -32,7 +32,7 @@ export default class Login extends React.Component {
       <div class="mw-500 absolute-center">
         <div class="card color-dark shadow-6dp animated fadeIn animation-delay-7">
           <div class="ms-hero-bg-primary ">
-            <h2 class="text-center no-m pt-4 pb-4 color-white index-1">Rockhurst Login</h2>
+            <h2 class="text-center no-m pt-4 pb-4 color-white index-1">Login</h2>
           </div>
           <div class="card-block">
             <div class="tab-content">
